@@ -11,14 +11,14 @@ ChefCraft | Small UI Sample for Cooking Application
 
 #### Technology
 
-- RxSwift\RxCocoa;
-- Texture;
-- MVVM Pattern usage;
-- Swinject;
+- RxSwift\RxCocoa
+- Texture
+- MVVM Pattern usage
+- Swinject
 
 #### Apendix:
 
-- SwiftLint;
+- SwiftLint
 
 #### Deployment
 
