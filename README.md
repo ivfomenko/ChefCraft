@@ -23,6 +23,3 @@ ChefCraft | Small UI Sample for Cooking Application
 #### Deployment
 
 - cd root folder && pod install
-
-#### Delivery
- testflight delivery
