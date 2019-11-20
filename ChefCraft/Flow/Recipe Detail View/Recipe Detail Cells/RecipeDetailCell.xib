@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Light.otf">
+            <string>Metropolis-Light</string>
+        </array>
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeDetailCell" id="KGk-i7-Jjw" customClass="RecipeDetailCell" customModule="ChefCraft" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-7X-wfj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="3Bt-7w-n2Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LPG-1K-ZeG">
+                                        <rect key="frame" x="36" y="36" width="248" height="64"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VBN-pN-H1x">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="64"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheese Grill Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVB-dN-hqw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="42"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
+                                                        <color key="textColor" name="darkGreen"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Sarah Smith" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6N-3J-9ZR">
+                                                        <rect key="frame" x="0.0" y="50" width="200" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Light" family="Metropolis" pointSize="14"/>
+                                                        <color key="textColor" name="darkGreen"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVq-uM-Pxd">
+                                                <rect key="frame" x="216" y="0.0" width="32" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0df-qv-rXW" customClass="SelectableButton" customModule="ChefCraft" customModuleProvider="target">
+                                                        <rect key="frame" x="4" y="3" width="24" height="36"/>
+                                                        <color key="tintColor" name="unactive1"/>
+                                                        <state key="normal" image="like"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                                                <color key="value" name="unactive1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                                <color key="value" name="darkGreen"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="0df-qv-rXW" firstAttribute="leading" secondItem="ZVq-uM-Pxd" secondAttribute="leading" constant="4" id="U3y-0U-KTH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0df-qv-rXW" secondAttribute="trailing" constant="4" id="ln7-u2-u07"/>
+                                                    <constraint firstAttribute="width" constant="32" id="taW-An-7Io"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="VLS-At-4cH"/>
+                                            <constraint firstItem="0df-qv-rXW" firstAttribute="centerY" secondItem="zVB-dN-hqw" secondAttribute="centerY" id="yHR-69-euy"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="F8p-Sc-7dW">
+                                        <rect key="frame" x="36" y="129" width="248" height="54"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPr-zp-t2t">
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="54"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8v7-0F-j9G">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="54"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKI-SJ-Tqv">
+                                                                <rect key="frame" x="14" y="0.0" width="44" height="27"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Light" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="darkGreen"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="176 cal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7p-sE-wTy">
+                                                                <rect key="frame" x="16.5" y="29" width="39" height="25"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="darkGreen"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="8v7-0F-j9G" firstAttribute="leading" secondItem="rPr-zp-t2t" secondAttribute="leading" id="YP1-B2-3vI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8v7-0F-j9G" secondAttribute="bottom" id="hBt-fb-WHb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8v7-0F-j9G" secondAttribute="trailing" id="joF-GB-Vt3"/>
+                                                    <constraint firstItem="8v7-0F-j9G" firstAttribute="top" secondItem="rPr-zp-t2t" secondAttribute="top" id="zdg-V0-Nzw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="unactive1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7l-9s-9fc">
+                                                <rect key="frame" x="88" y="0.0" width="72" height="54"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNt-bm-pw1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="54"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-yr-TsO">
+                                                                <rect key="frame" x="6" y="0.0" width="60" height="27"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Light" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="darkGreen"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZK-dS-Cj5">
+                                                                <rect key="frame" x="29.5" y="29" width="13.5" height="25"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="darkGreen"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="aNt-bm-pw1" firstAttribute="top" secondItem="d7l-9s-9fc" secondAttribute="top" id="LPf-ae-HU8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aNt-bm-pw1" secondAttribute="trailing" id="etk-mE-KDz"/>
+                                                    <constraint firstItem="aNt-bm-pw1" firstAttribute="leading" secondItem="d7l-9s-9fc" secondAttribute="leading" id="fOf-8s-av2"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aNt-bm-pw1" secondAttribute="bottom" id="u9Y-sZ-lRy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="unactive1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFj-Li-Ald">
+                                                <rect key="frame" x="176" y="0.0" width="72" height="54"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GWl-0B-yQ8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72" height="54"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIT-Ul-dhX">
+                                                                <rect key="frame" x="8.5" y="0.0" width="55" height="27"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Light" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="darkGreen"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSr-gQ-mp4">
+                                                                <rect key="frame" x="18" y="29" width="36.5" height="25"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="darkGreen"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="GWl-0B-yQ8" secondAttribute="bottom" id="GIt-yq-9dj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GWl-0B-yQ8" secondAttribute="trailing" id="H7u-yw-Jmq"/>
+                                                    <constraint firstItem="GWl-0B-yQ8" firstAttribute="top" secondItem="CFj-Li-Ald" secondAttribute="top" id="gaZ-aJ-mO5"/>
+                                                    <constraint firstItem="GWl-0B-yQ8" firstAttribute="leading" secondItem="CFj-Li-Ald" secondAttribute="leading" id="uve-7r-qtT"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="unactive1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="wn1-5q-Cfz"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BwX-Yt-50T">
+                                        <rect key="frame" x="36" y="212" width="248" height="101.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Recipie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzM-Yn-bbb">
+                                                <rect key="frame" x="0.0" y="0.0" width="248" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJz-Ac-29b">
+                                                <rect key="frame" x="0.0" y="31.5" width="248" height="70"/>
+                                                <string key="text">Veg cheese grilled sandwich / vegetable cheese Sandwich is a quick Vegetarian Sandwich (Or Vegan Sandwich) recipe that can be made in minutes with very few ingredients.</string>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TLA-sX-j6X">
+                                        <rect key="frame" x="36" y="342.5" width="248" height="269.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipie Flow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMf-ib-Cng">
+                                                <rect key="frame" x="0.0" y="0.0" width="248" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDs-Gf-aOx">
+                                                <rect key="frame" x="0.0" y="31.5" width="248" height="238"/>
+                                                <string key="text">Veg cheese grilled sandwich / vegetable cheese Sandwich is a quick Vegetarian Sandwich (Or Vegan Sandwich) recipe that can be made in minutes with very few ingredients.Veg cheese grilled sandwich / vegetable cheese Sandwich is a quick Vegetarian Sandwich (Or Vegan Sandwich) recipe that can be made in minutes with very few ingredients.Veg cheese grilled sandwich / vegetable cheese Sandwich is a quick Vegetarian Sandwich (Or Vegan Sandwich) recipe that can be made in minutes with very few ingredients.Veg cheese grilled sandwich / vegetable cheese Sandwich is a quick Vegetarian Sandwich (Or Vegan Sandwich) recipe that can be made in minutes with very few ingredients.</string>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N3h-ek-O2k">
+                                        <rect key="frame" x="36" y="641" width="248" height="223"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozk-iB-pZP">
+                                                <rect key="frame" x="0.0" y="0.0" width="248" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
+                                                <color key="textColor" name="darkGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-Ly-CpL">
+                                                <rect key="frame" x="0.0" y="31.5" width="248" height="191.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zZ8-ku-Ac5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="248" height="92"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="O3j-bb-ihs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="190" height="92"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cheese Grill Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjx-VH-uMC">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="12"/>
+                                                                        <color key="textColor" name="darkGreen"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9c-2z-0Oe">
+                                                                        <rect key="frame" x="0.0" y="22" width="190" height="70"/>
+                                                                        <string key="text">Veg cheese grilled sandwich / vegetable cheese Sandwich is a quick Vegetarian Sandwich (Or Vegan Sandwich) recipe that can be made in minutes with very few ingredients.</string>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                        <color key="textColor" name="darkGreen"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEv-KG-XLm">
+                                                                <rect key="frame" x="206" y="0.0" width="42" height="50"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-GC-dMv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wc-F3-lWP">
+                                                                                <rect key="frame" x="4" y="3" width="10" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                                <color key="textColor" name="darkGreen"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge0-hP-HzQ">
+                                                                                <rect key="frame" x="18" y="0.0" width="20" height="20"/>
+                                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                                <color key="tintColor" name="gold"/>
+                                                                                <state key="normal" image="star">
+                                                                                    <color key="titleColor" name="gold"/>
+                                                                                </state>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="42" id="XnZ-7F-Q4d"/>
+                                                                        </constraints>
+                                                                        <edgeInsets key="layoutMargins" top="0.0" left="4" bottom="0.0" right="4"/>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="v5K-GC-dMv" secondAttribute="trailing" id="6j6-yC-I5h"/>
+                                                                    <constraint firstItem="v5K-GC-dMv" firstAttribute="leading" secondItem="pEv-KG-XLm" secondAttribute="leading" id="lFL-mc-O9E"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="v5K-GC-dMv" firstAttribute="centerY" secondItem="Gjx-VH-uMC" secondAttribute="centerY" id="fjz-Ok-M0c"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="h2Q-mi-g1w">
+                                                        <rect key="frame" x="0.0" y="100" width="248" height="91.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KwG-he-B0F">
+                                                                <rect key="frame" x="0.0" y="0.0" width="190" height="91.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cheese Grill Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz5-EV-0eS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="12"/>
+                                                                        <color key="textColor" name="darkGreen"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxf-HY-eCG">
+                                                                        <rect key="frame" x="0.0" y="22" width="190" height="69.5"/>
+                                                                        <string key="text">Veg cheese grilled sandwich / vegetable cheese Sandwich is a quick Vegetarian Sandwich (Or Vegan Sandwich) recipe that can be made in minutes with very few ingredients.</string>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                        <color key="textColor" name="darkGreen"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKj-G9-Wjq">
+                                                                <rect key="frame" x="206" y="0.0" width="42" height="50"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZMS-dn-8oc">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQN-8H-GVs">
+                                                                                <rect key="frame" x="4" y="3" width="10" height="14"/>
+                                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                                <color key="textColor" name="darkGreen"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVT-2v-gIx">
+                                                                                <rect key="frame" x="18" y="0.0" width="20" height="20"/>
+                                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                                <color key="tintColor" name="gold"/>
+                                                                                <state key="normal" image="star">
+                                                                                    <color key="titleColor" name="gold"/>
+                                                                                </state>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="42" id="SDN-bP-v8z"/>
+                                                                        </constraints>
+                                                                        <edgeInsets key="layoutMargins" top="0.0" left="4" bottom="0.0" right="4"/>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="ZMS-dn-8oc" secondAttribute="trailing" id="Ank-4I-KGD"/>
+                                                                    <constraint firstItem="ZMS-dn-8oc" firstAttribute="leading" secondItem="wKj-G9-Wjq" secondAttribute="leading" id="djD-zG-o9w"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ZMS-dn-8oc" firstAttribute="centerY" secondItem="bz5-EV-0eS" secondAttribute="centerY" id="CAx-FT-XfI"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="36" left="36" bottom="36" right="36"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="white"/>
+                        <constraints>
+                            <constraint firstItem="3Bt-7w-n2Y" firstAttribute="leading" secondItem="9Tc-7X-wfj" secondAttribute="leading" id="IHA-jh-4oi"/>
+                            <constraint firstAttribute="bottom" secondItem="3Bt-7w-n2Y" secondAttribute="bottom" id="P2j-ca-aqb"/>
+                            <constraint firstItem="3Bt-7w-n2Y" firstAttribute="top" secondItem="9Tc-7X-wfj" secondAttribute="top" id="udz-Bx-bwJ"/>
+                            <constraint firstAttribute="trailing" secondItem="3Bt-7w-n2Y" secondAttribute="trailing" id="vwa-7P-8ic"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFB-mK-kKa">
+                        <rect key="frame" x="252" y="36" width="32" height="64"/>
+                        <connections>
+                            <action selector="likeActionAreaTouched:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rEk-Zz-oQG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HFB-mK-kKa" firstAttribute="centerY" secondItem="ZVq-uM-Pxd" secondAttribute="centerY" id="5Nz-hi-d15"/>
+                    <constraint firstItem="9Tc-7X-wfj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="61I-FZ-vuO"/>
+                    <constraint firstAttribute="bottom" secondItem="9Tc-7X-wfj" secondAttribute="bottom" id="8lB-Xg-G5a"/>
+                    <constraint firstItem="9Tc-7X-wfj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BVV-mt-mLA"/>
+                    <constraint firstAttribute="trailing" secondItem="9Tc-7X-wfj" secondAttribute="trailing" id="VE0-Sy-4Ss"/>
+                    <constraint firstItem="HFB-mK-kKa" firstAttribute="width" secondItem="ZVq-uM-Pxd" secondAttribute="width" id="wDi-sZ-CqZ"/>
+                    <constraint firstItem="HFB-mK-kKa" firstAttribute="height" secondItem="ZVq-uM-Pxd" secondAttribute="height" id="zbU-x7-5RH"/>
+                    <constraint firstItem="HFB-mK-kKa" firstAttribute="centerX" secondItem="ZVq-uM-Pxd" secondAttribute="centerX" id="zfL-7U-nFW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="likeButton" destination="0df-qv-rXW" id="xKr-qx-lon"/>
+                <outlet property="mainContainer" destination="9Tc-7X-wfj" id="m6K-ji-x8N"/>
+            </connections>
+            <point key="canvasLocation" x="-204.34782608695653" y="303.68303571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like" width="20" height="18"/>
+        <image name="star" width="10" height="10"/>
+        <namedColor name="darkGreen">
+            <color red="0.28627450980392155" green="0.33333333333333331" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gold">
+            <color red="1" green="0.70196078431372544" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="unactive1">
+            <color red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

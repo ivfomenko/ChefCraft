@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="4fi-tn-TW2">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0ae-PA-8F1" customClass="HomeViewController" customModule="ChefCraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bAi-qv-Jyv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vX5-ZK-E2f">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O10-h3-pEd" customClass="HomeBarView" customModule="ChefCraft" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="32" width="414" height="64"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="WcN-G7-XMW"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PvZ-aS-jWn">
+                                        <rect key="frame" x="0.0" y="96" width="414" height="722"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpD-y7-11i">
+                                                <rect key="frame" x="24" y="20" width="390" height="224"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-wi-r42">
+                                                <rect key="frame" x="24" y="264" width="390" height="450"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="20" left="24" bottom="8" right="0.0"/>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="32" left="0.0" bottom="0.0" right="0.0"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="white"/>
+                        <constraints>
+                            <constraint firstItem="8HD-se-6Co" firstAttribute="trailing" secondItem="vX5-ZK-E2f" secondAttribute="trailing" id="Pg0-is-umZ"/>
+                            <constraint firstItem="vX5-ZK-E2f" firstAttribute="leading" secondItem="8HD-se-6Co" secondAttribute="leading" id="UIK-yO-B7k"/>
+                            <constraint firstItem="vX5-ZK-E2f" firstAttribute="top" secondItem="8HD-se-6Co" secondAttribute="top" id="ihA-79-Nav"/>
+                            <constraint firstItem="8HD-se-6Co" firstAttribute="bottom" secondItem="vX5-ZK-E2f" secondAttribute="bottom" id="joX-dX-fyJ"/>
+                            <constraint firstItem="xpD-y7-11i" firstAttribute="height" secondItem="bAi-qv-Jyv" secondAttribute="height" multiplier="0.25" id="mpq-VJ-hvG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8HD-se-6Co"/>
+                    </view>
+                    <connections>
+                        <outlet property="barView" destination="O10-h3-pEd" id="Oau-g0-brJ"/>
+                        <outlet property="recipesCategoryContainer" destination="xpD-y7-11i" id="Pja-ro-fhT"/>
+                        <outlet property="recipesListContainer" destination="Ke2-wi-r42" id="SlS-f7-GeK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OG6-Qu-lBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

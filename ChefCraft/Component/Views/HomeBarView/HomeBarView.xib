@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeBarView" customModule="ChefCraft" customModuleProvider="target">
+            <connections>
+                <outlet property="notificationButton" destination="sbW-iL-RCI" id="qIV-Oc-FMm"/>
+                <outlet property="searchButton" destination="TeB-CY-TRQ" id="Kaf-Fu-xnT"/>
+                <outlet property="titleLabel" destination="gf1-FB-U8x" id="bHH-Wq-h6t"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wjb-df-eho"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alignment="top" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="o2m-NY-FBz">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looking for your favourite meal " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf1-FB-U8x" userLabel="Looking for your favourite meal">
+                            <rect key="frame" x="24" y="4" width="252" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="anL-kF-s3Q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="24"/>
+                            <color key="textColor" name="darkGreen"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="8WX-kk-393">
+                            <rect key="frame" x="318" y="4" width="72" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbW-iL-RCI">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="L0g-Nn-qZf"/>
+                                    </constraints>
+                                    <color key="tintColor" name="darkGreen"/>
+                                    <state key="normal" image="ring"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeB-CY-TRQ">
+                                    <rect key="frame" x="48" y="0.0" width="24" height="48"/>
+                                    <color key="tintColor" name="darkGreen"/>
+                                    <state key="normal" image="search"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="GsQ-AH-3AC"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="4" left="24" bottom="0.0" right="24"/>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eay-Pu-l14" customClass="RoundView" customModule="ChefCraft" customModuleProvider="target">
+                    <rect key="frame" x="338" y="4" width="4" height="4"/>
+                    <color key="backgroundColor" name="red"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="0iR-Rs-izD"/>
+                        <constraint firstAttribute="width" constant="4" id="AWo-g2-Upq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="o2m-NY-FBz" secondAttribute="bottom" id="2gc-nO-J5G"/>
+                <constraint firstAttribute="trailing" secondItem="o2m-NY-FBz" secondAttribute="trailing" id="Twb-Wy-JHh"/>
+                <constraint firstItem="Eay-Pu-l14" firstAttribute="trailing" secondItem="sbW-iL-RCI" secondAttribute="trailing" id="nZ9-9v-0nW"/>
+                <constraint firstItem="o2m-NY-FBz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oDF-iC-wpV"/>
+                <constraint firstItem="Eay-Pu-l14" firstAttribute="top" secondItem="sbW-iL-RCI" secondAttribute="top" id="s7Q-Mm-KFg"/>
+                <constraint firstItem="o2m-NY-FBz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yDG-OX-Fsd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-123.88392857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ring" width="21" height="21"/>
+        <image name="search" width="24" height="24"/>
+        <namedColor name="darkGreen">
+            <color red="0.28627450980392155" green="0.33333333333333331" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="0.8901960784313725" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

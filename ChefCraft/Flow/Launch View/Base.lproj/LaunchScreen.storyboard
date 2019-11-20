@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vR6-li-Zbl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="side-tomato-4" translatesAutoresizingMaskIntoConstraints="NO" id="bxI-Lq-IFW">
+                                <rect key="frame" x="-38" y="256.5" width="331" height="269"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchLabel" translatesAutoresizingMaskIntoConstraints="NO" id="Dfq-2X-GL9">
+                                <rect key="frame" x="12" y="379" width="390" height="148"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaves" translatesAutoresizingMaskIntoConstraints="NO" id="hRd-RJ-394">
+                                <rect key="frame" x="174" y="551" width="265" height="215"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomatoYellow" translatesAutoresizingMaskIntoConstraints="NO" id="r1m-xe-82y">
+                                <rect key="frame" x="174" y="583" width="265" height="215"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="launchBackground"/>
+                        <constraints>
+                            <constraint firstItem="Dfq-2X-GL9" firstAttribute="centerY" secondItem="AZ8-9r-Iwk" secondAttribute="centerY" id="4Yz-sW-ueb"/>
+                            <constraint firstItem="hRd-RJ-394" firstAttribute="centerX" secondItem="r1m-xe-82y" secondAttribute="centerX" id="5u3-aX-BUi"/>
+                            <constraint firstItem="r1m-xe-82y" firstAttribute="width" secondItem="bxI-Lq-IFW" secondAttribute="width" multiplier="0.8" id="6D0-e3-9H9"/>
+                            <constraint firstItem="AZ8-9r-Iwk" firstAttribute="trailing" secondItem="Dfq-2X-GL9" secondAttribute="trailing" constant="12" id="7g0-J0-m6F"/>
+                            <constraint firstItem="bxI-Lq-IFW" firstAttribute="height" secondItem="vR6-li-Zbl" secondAttribute="height" multiplier="0.3" id="7nc-lg-WgD"/>
+                            <constraint firstItem="hRd-RJ-394" firstAttribute="centerY" secondItem="r1m-xe-82y" secondAttribute="centerY" constant="-32" id="94a-FH-zvt"/>
+                            <constraint firstItem="AZ8-9r-Iwk" firstAttribute="bottom" secondItem="r1m-xe-82y" secondAttribute="bottom" constant="64" id="BIP-OP-0c8"/>
+                            <constraint firstItem="hRd-RJ-394" firstAttribute="width" secondItem="r1m-xe-82y" secondAttribute="width" id="MnD-5B-Ec6"/>
+                            <constraint firstItem="hRd-RJ-394" firstAttribute="height" secondItem="r1m-xe-82y" secondAttribute="height" id="QfU-3j-qnK"/>
+                            <constraint firstItem="Dfq-2X-GL9" firstAttribute="leading" secondItem="AZ8-9r-Iwk" secondAttribute="leading" constant="12" id="Sax-x3-0IC"/>
+                            <constraint firstAttribute="trailing" secondItem="r1m-xe-82y" secondAttribute="trailing" constant="-25" id="VvL-jG-Mcu"/>
+                            <constraint firstItem="bxI-Lq-IFW" firstAttribute="width" secondItem="vR6-li-Zbl" secondAttribute="width" multiplier="0.8" id="gFX-dV-qy7"/>
+                            <constraint firstItem="r1m-xe-82y" firstAttribute="height" secondItem="bxI-Lq-IFW" secondAttribute="height" multiplier="0.8" id="lao-eU-l90"/>
+                            <constraint firstItem="Dfq-2X-GL9" firstAttribute="centerY" secondItem="bxI-Lq-IFW" secondAttribute="centerY" constant="62" id="sLG-zU-1CW"/>
+                            <constraint firstItem="Dfq-2X-GL9" firstAttribute="centerX" secondItem="AZ8-9r-Iwk" secondAttribute="centerX" id="tBg-EA-mXP"/>
+                            <constraint firstItem="bxI-Lq-IFW" firstAttribute="leading" secondItem="vR6-li-Zbl" secondAttribute="leading" constant="-38" id="zwF-Jb-Zka"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AZ8-9r-Iwk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launchLabel" width="468" height="74"/>
+        <image name="leaves" width="314" height="326"/>
+        <image name="side-tomato-4" width="496" height="351"/>
+        <image name="tomatoYellow" width="404" height="392"/>
+        <namedColor name="launchBackground">
+            <color red="0.9882352941176471" green="0.93333333333333335" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

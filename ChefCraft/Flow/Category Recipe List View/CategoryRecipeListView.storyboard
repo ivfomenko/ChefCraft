@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Category Recipe List View Controller-->
+        <scene sceneID="XXA-nE-1Zz">
+            <objects>
+                <viewController storyboardIdentifier="CategoryRecipeListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vT4-AK-g4e" customClass="CategoryRecipeListViewController" customModule="ChefCraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qf0-IK-TpW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xat-24-dP9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e6-U9-COR">
+                                        <rect key="frame" x="24" y="8" width="366" height="810"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="24" bottom="0.0" right="24"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xat-24-dP9" firstAttribute="bottom" secondItem="pkQ-Bs-qsk" secondAttribute="bottom" id="2UY-pU-EZO"/>
+                            <constraint firstItem="Xat-24-dP9" firstAttribute="trailing" secondItem="pkQ-Bs-qsk" secondAttribute="trailing" id="HSc-X4-jOS"/>
+                            <constraint firstItem="Xat-24-dP9" firstAttribute="leading" secondItem="pkQ-Bs-qsk" secondAttribute="leading" id="cp6-En-3CV"/>
+                            <constraint firstItem="Xat-24-dP9" firstAttribute="top" secondItem="pkQ-Bs-qsk" secondAttribute="top" id="wRf-UX-hQ1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pkQ-Bs-qsk"/>
+                    </view>
+                    <connections>
+                        <outlet property="nodeContainer" destination="4e6-U9-COR" id="UVv-JW-QIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amk-hY-vPd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-587" y="137"/>
+        </scene>
+    </scenes>
+</document>
