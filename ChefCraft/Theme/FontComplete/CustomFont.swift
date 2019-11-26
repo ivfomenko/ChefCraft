@@ -1,9 +1,8 @@
 //
 //  CustomFont.swift
-//  PixalBug
 //
 //  Created by Sergey Reshetnyak on 29.12.2017.
-//  Copyright © 2017 The Fintech Lab. All rights reserved.
+//  Copyright © 2017 Sergey Reshetnyak. All rights reserved.
 //
 
 public enum CustomFont: String, FontRepresentable {
